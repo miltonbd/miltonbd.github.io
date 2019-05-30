@@ -1,11 +1,9 @@
 <?php
-    $to = 'demo@site.com';
+    $to = 'milton.2002@yahoo.com';
     $name = $_POST["name"];
     $email= $_POST["email"];
     $text= $_POST["message"];
     $subject= $_POST["subject"];
-    
-
 
     $headers = 'MIME-Version: 1.0' . "\r\n";
     $headers .= "From: " . $email . "\r\n"; // Sender's E-mail
@@ -23,7 +21,7 @@
 
     if (@mail($to, $email, $message, $headers))
     {
-        echo 'Your message has been sent.';
+        header("Location: http://miltonbd.github.io/thank-you-contact.html");
     }else{
         echo 'failed';
     }
