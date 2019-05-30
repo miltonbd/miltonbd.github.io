@@ -21,7 +21,7 @@
 
     if (mail($to, $subject, $message, $headers))
     {
-        header("Location: http://miltonbd.github.io/thank-you-contact.html");
+        echo 'Thank you for contacting me. I will reply to you as soon as possible. Best Luck.';
     }else{
         echo 'failed';
     }
