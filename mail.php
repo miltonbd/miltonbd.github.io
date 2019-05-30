@@ -19,11 +19,9 @@
         
     </table>';
 
-    if (mail($to, $email, $message, $headers))
+    if (mail($to, $subject, $message, $headers))
     {
         header("Location: http://miltonbd.github.io/thank-you-contact.html");
     }else{
         echo 'failed';
     }
-
-?>
