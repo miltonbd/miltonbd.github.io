@@ -19,7 +19,7 @@
         
     </table>';
 
-    if (@mail($to, $email, $message, $headers))
+    if (mail($to, $email, $message, $headers))
     {
         header("Location: http://miltonbd.github.io/thank-you-contact.html");
     }else{
