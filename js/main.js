@@ -314,6 +314,7 @@ $(document).ready(function() {
         var target = $('nav a[href="' + path + '"]');
         // Add active class to target link
         target.addClass('menu-active');
+        $('#header').load('header.html');
     });
 
     $(document).ready(function() {
